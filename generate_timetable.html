@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+            crossorigin="anonymous"
+        >
+        <title>Schedule</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-12">
+                    <header>
+                        <h1>Section</h1>
+                    </header>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="course.html">Course</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="section.html">Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list_section.html">List Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="generate_timetable.html">Time Table<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-12" id="select-section">
+                    <div class="container">
+                         <!--
+                            monday[9];
+                            tuesday[9];
+                            wednesday[9];
+                            thursday[9];
+                            friday[9];
+
+                            $Query = SELECT * FROM `section` JOIN `course` ON section.course_id = course.course_id 
+                            WHERE course.will_choose = 1 AND section.selected=1;
+
+                            $result = mysqli_query($conn, $Query);
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_array($result)) {
+                                    $section_id = ;
+                                    $course_id = ;
+                                    $section_name = ;
+                                    $day_week = ;
+                                    $time_tart = ;
+                                    $time_end = ;
+                                    
+                                    if(day_week="monday"){
+                                        if(time between = "8:00"){
+                                        monday[0] = couser id + section name + type;
+                                        }
+                                        if(time between = "9:00"){
+                                        
+                                        }
+                                    }
+                                    
+                                }
+                            }
+
+                           
+                            
+                        -->
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr class="bg-light-gray">
+                                        <th class="text-uppercase">Time
+                                        </th>
+                                        <th class="text-uppercase">Monday</th>
+                                        <th class="text-uppercase">Tuesday</th>
+                                        <th class="text-uppercase">Wednesday</th>
+                                        <th class="text-uppercase">Thursday</th>
+                                        <th class="text-uppercase">Friday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle">08:00</td>
+                                        <td>
+                                            <!--
+                                                php echo monday[0];
+                                            -->
+                                        </td>
+                                        <td>
+                                            <!--
+                                                php echo tuesday[0];
+                                            -->
+                                        </td>
+        
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                       
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="align-middle">09:00</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                      
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="align-middle">10:00</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                         
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                      
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="align-middle">11:00</td>
+                                        <td>
+        
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                        
+                                        </td>
+                                        <td>
+        
+                                        </td>
+                                  
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="align-middle">12:00</td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+        
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">13:00</td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+        
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">14:00</td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+        
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">15:00</td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+        
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">16:00</td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+        
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                       
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</html>

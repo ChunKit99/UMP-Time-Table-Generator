@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+            crossorigin="anonymous"
+        >
+        <title>Schedule</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-12">
+                    <header>
+                        <h1>Course</h1>
+                    </header>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="course.html">
+                                    Course
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="section.html">Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list_section.html">List Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="generate_timetable.html">Time Table</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-12" id="form-input">
+                    <div class="card">
+                        <h5 class="card-header">Edit Course</h5>
+                        <div class="card-body">
+                            <form method="post" action="#.php">
+                                <!--course id-->
+                                <div class="form-group row">
+                                    <label for="course-id" class="col-sm-2 col-form-label">Course ID</label>
+                                    <div class="col-sm-10">
+                                        <input
+                                            type="text"
+                                            readonly
+                                            class="form-control-plaintext"
+                                            name="course-id"
+                                            value=""
+                                        >
+                                    </div>
+                                </div>
+                                <!--Course name-->
+                                <div class="form-group row">
+                                    <label for="course-name" class="col-sm-2 col-form-label">Course Name</label>
+                                    <div class="col-sm-10">
+                                        <input
+                                            type="text"
+                                            readonly
+                                            class="form-control-plaintext"
+                                            name="course-name"
+                                            value=""
+                                        >
+                                    </div>
+                                </div>
+                                <!--Final Exam-->
+                                <div class="form-group row">
+                                    <label for="final-exam" class="col-sm-2 col-form-label">Final Exam</label>
+                                    <div class="col-sm-10">
+                                        <select class="custom-select mr-sm-2" id="final-exam" name="final-exam" required>
+                                            <option value ="Yes" selected>Yes</option>
+                                            <option value ='No'>No</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                <!--will choose-->
+                                <div class="form-group row">
+                                    <label for="will-choose" class="col-sm-2 col-form-label">Will Choose</label>
+                                    <div class="col-sm-10">
+                                        <select class="custom-select mr-sm-2" id="will-choose" name="will-choose" required>
+                                            <option value ="Yes" selected>Yes</option>
+                                            <option value ='No'>No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input class="btn btn-outline-info" type="submit" value="Update">
+                                <a href="home.html"><button class="btn btn-outline-secondary" type="button">Cancel</button></a>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</html>

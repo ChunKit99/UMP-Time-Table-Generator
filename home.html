@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+            crossorigin="anonymous"
+        >
+        <title>Schedule</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-12">
+                    <header>
+                        <h1>List Course</h1>
+                    </header>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="home.html">
+                                    Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="course.html">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="section.html">Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list_section.html">List Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="generate_timetable.html">Time Table</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-12" id="list-course">
+                    <div class="text-center">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Course ID</th>
+                                    <th scope="col">Course Name</th>
+                                    <th scope="col">Final Exam</th>
+                                    <th scope="col">Will Choose</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>courseid</td>
+                                    <td>coursename</td>
+                                    <td>yes</td>
+                                    <td>yes</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Action button for course">
+                                            <a href='edit_course.html'><button type='button' class='btn btn-warning'>Edit</button></a>
+                                            <a href=''><button type='button' class='btn btn-danger'>Delete</button></a>
+                                        </div>
+                                        <div class="btn-group" role="group" aria-label="Action button for select">
+                                            <a href='choose_section.html'><button type='button' class='btn btn-success'>Choose Section</button></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</html>
